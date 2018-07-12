@@ -1,0 +1,56 @@
+#list li{
+    width: 285px;
+    height: 400px;
+    list-style: none;
+    float: left;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 6px;
+    transition: .3s all;
+}
+#list li:hover{
+    border: 1px solid #ddd;
+}
+#list li img{
+    width: 285px;
+    padding: 10px;
+    height: 285px; 
+}
+#list p{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+#list .img_text h6{
+    display: block;
+    width: 285px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{
+    font-size: 18px;
+    color: #ff464e;
+    margin-right: 20px;
+    font-weight: 900;
+}
+.market{
+    text-decoration: line-through;
+    font-size: 12px;
+    color:#ccc;
+}
+.img_text{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.wrap h3{
+    height: 50px;
+    color: #eeefff;
+    margin-bottom: 10px;
+    line-height: 50px;
+    text-indent: 25px;
+}
+.btn-group{
+    padding-left: 25px;
+}

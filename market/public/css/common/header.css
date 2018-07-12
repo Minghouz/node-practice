@@ -1,0 +1,28 @@
+#header .container-fluid .navbar-header .navbar-brand{
+    padding: 0;
+}
+.container-fluid{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.navbar-form{
+    position: relative;
+    
+}
+.dropdown-menu{
+    width: 196px;
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    border-radius: 0 0 4px 4px;
+}
+.dropdown-menu li{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dropdown-menu li:hover{
+    background: #ddd;
+    cursor: pointer;
+}

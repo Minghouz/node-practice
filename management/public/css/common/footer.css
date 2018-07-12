@@ -1,0 +1,97 @@
+
+/* 页脚 */
+.footer{
+    width: 100%;
+    border-top: 5px solid #ff464e;
+    margin: 40px 0;
+    height:auto;
+    padding-top: 30px;
+}   
+.footer_info{
+    height: 56px;
+    width: 100%;
+    text-align: center;
+}
+.footer_info p{
+    font-size: 12px;
+    color: #ddd;
+}
+.footer_sign{
+    width: 100%;
+    height: 50px;
+}
+.footer_sign a{
+    float: left;
+    margin-right: 50px;
+}
+.sign_box{
+    width: 638px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.footer_list{
+    width: 1200px;
+    height: auto;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.list_left{
+    float: left;
+    margin: 40px;
+}
+.list_left p{
+    margin-top: 5px;
+}  
+.list_center{
+    width: 730px;
+    height: 200px;
+    padding-top: 40px;
+    float: left;
+}
+.list_right{
+    width: 246px;
+    padding-top:40px; 
+    height: 200px;
+    float: right;
+}
+.list_right_kefu{
+    width: 90px;
+    height: 50px;
+    background: url(../../img/common/service_add.gif) no-repeat;
+    background-position: 0 0;
+    float: left;
+}
+.list_right_kefu:hover{
+    background: url(../../img/common/service_add.gif) no-repeat;
+    background-position: 0 -46.5px;
+}
+.list_right_txt{
+    float: left;
+    padding-top: 7px;
+    line-height: 12px;
+    height: 50px;
+}
+.list_center_ul{
+    width: 182px;
+    float: left;
+}
+.list_center_ul li{
+    list-style: none;
+}
+.list_center_ul span{
+    width: 4px;
+    height: 4px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #c6c6c6;
+    display: inline-block;
+    margin-right: 5px;
+    float: left;
+    margin-top: 8px;
+}
+.list_center_ul a{
+    color: #ddd;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+}

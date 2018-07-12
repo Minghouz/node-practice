@@ -1,0 +1,196 @@
+body{
+    background: #f6f6f6;
+}
+.navbar-default{
+    background: #fff;
+}
+#main_top{
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom:10px;
+}
+.main_top_list{
+    width: 230px;
+    height: 360px; 
+}
+.main_types{
+    width: 100%;
+    height: auto;
+}
+.thumbnail:hover{
+    cursor: pointer;
+}
+.line{
+    width: 1px;
+    height: 14px;
+    float: left;
+    margin-top: 9%;
+    background: #ccc;
+}
+.list_dl{
+    width: 100%;
+    height: 100%;
+}
+.list_dl dd{
+    width: 49.5%;
+    height: 51px;
+    float: left;
+    border-bottom: 1px dashed #ccc;
+}
+.list_dl dd a{
+    display: block;
+    text-align: center;
+    line-height: 51px;
+}
+.list_dl dd a:hover{
+    background:#eee;
+    color: #ff464e;
+    overflow: hidden;
+}
+.main_top_right{
+    width: 230px;
+    height: 360px;
+}
+.main_top_right a img{
+    width: 100%;
+}
+.main_top_right a{
+    width: 114px;
+    height: 119px;
+    display: block;
+    position: relative;
+}
+.main_top_right a::after{
+    content: '';
+    width: 100%;
+    height: 119px;
+    display: block;
+    background: #fff;
+    opacity: .2;
+    position: absolute;
+    left: 0;
+    top: 0;
+}   
+.main_top_right a:hover::after{
+    opacity: 0;
+} 
+.main_top_right .topline{
+    width: 100%;
+}
+.main_top_right .topline img{
+    width: 100%;
+}
+.swiper-container {
+    width: 700px;
+    height: 360px;
+    margin: 0px 20px;
+}  
+#main{
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.phone{
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+}
+.clothes{
+    width: 1200px;
+    height: 400px;
+    margin: 40px 0;  
+    overflow: hidden;  
+}
+.snacks{
+    width: 1200px;
+    height: 400px; 
+    overflow: hidden;   
+}
+
+
+.clothes li,
+.snacks li,
+.phone li{
+    width: 285px;
+    height: 390px;
+    list-style: none;
+    float: left;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 6px;
+    transition: .3s all;
+    position: relative;
+    overflow: hidden;
+}
+.snacks li:hover,
+.clothes li:hover,
+.phone li:hover{
+    border: 1px solid #ddd;
+}
+.snacks li:hover .look,
+.clothes li:hover .look,
+.phone li:hover .look{
+    animation: movehover .6s linear .4s forwards;
+}
+.snacks li img,
+.clothes li img,
+.phone li img{
+    width: 285px;
+    padding: 10px;
+    height: 285px; 
+}
+.snacks p,
+.clothes p,
+.phone p{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.snacks h6,
+.clothes h6,
+.phone h6{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{
+    font-size: 18px;
+    color: #ff464e;
+    margin-right: 20px;
+    font-weight: 900;
+}
+.market{
+    text-decoration: line-through;
+    font-size: 12px;
+    color:#ccc;
+}
+.img_text{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.look{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    background: #eee;
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+    right: -60px;
+    bottom: 5px;
+}
+.look:hover{
+    background: #ff464e;
+    color: #fff;
+}
+
+@keyframes movehover{
+    100%{
+        right:0;
+    }
+}

@@ -1,0 +1,137 @@
+后台管理系统  绑定端口号：3000
+
+
+//-------------------------注册
+接口：/api/users/register
+请求方式：post
+成功：
+    {
+        status:1,
+        info:"注册成功"
+    }
+失败：
+    {
+        status：0，
+        info:"用户名已存在"
+    }
+
+//----------------------用户登录
+接口：/api/users/login
+请求方式：post
+成功：
+    {
+        status:1,
+        info:"登录成功"
+    }
+失败：
+     {
+        status:0,
+        info:"用户名不存在"
+    }
+     {
+        status:2,
+        info:"密码错误"
+    }
+
+//----------------------判断用户是否登录
+接口：/api/users/islogin
+请求方式：get
+成功：
+    {
+        status:1,
+        info:"ok",
+        name:req.session.uname,
+        userstatus:req.session.status
+    }
+失败：
+    {
+        status:0,
+        info:"未登录"
+    }
+
+//------------------------判断用户是否退出
+接口：/api/users/loginout
+请求方式：get
+成功：
+    {
+        status:1,
+        info:"退出登录"
+    }
+
+//------------------------添加商品
+接口：/api/goods/Addgoods
+请求方式：post
+商品信息：
+    商品类型：type
+        手机：1
+        服装：2
+        零食：3
+    商品标题：title
+    商品市场价：market
+    商品现价：price
+    商品详情图：img
+    商品缩略图：sImg
+成功：
+    {
+        status:1,
+        info:"添加成功"
+    }
+
+//-------------------------查询商品
+接口：
+    查询条件商品：/api/goods/getgoods
+    模糊查询：/api/goods/getlikegoods
+    查询全部：/api/goods/getAllgoods
+请求方式：get
+成功：{
+        status:1,
+        data:data
+    }
+失败：
+{
+    status:0,
+    info:"获取数据失败！"
+}
+
+//-------------------------商品排序
+接口：/api/goods/goodsSort
+请求方式：get
+成功：{
+    status:1,
+    data:data
+}
+失败：
+    {
+        status:0,
+        info:"获取数据失败！"
+    }
+
+//-------------------------商品更新
+接口：
+    文本更新：/api/goods/updatetext
+    文本+图片更新：/api/goods/updategoods
+请求方式：post
+成功：
+    {
+        status：1,
+        info:"修改成功！"
+    }
+失败：
+    {
+        status：0,
+        info:"修改失败！"  
+    }
+
+//------------------------商品删除
+接口：/api/goods/removegoods
+请求方式：get
+成功：
+    {
+        status：1,
+        info:"删除成功！"
+    }
+失败：
+    {
+        status：0,
+        info:"删除失败！"  
+    }

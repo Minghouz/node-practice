@@ -1,0 +1,89 @@
+前端   绑定端口号3001 （便于前后端调试）
+
+//-------------------------注册
+接口：/api/users/register
+请求方式：post
+成功：
+    {
+        status:1,
+        info:"注册成功"
+    }
+失败：
+    {
+        status：0，
+        info:"用户名已存在"
+    }
+
+//----------------------用户登录
+接口：/api/users/login
+请求方式：post
+成功：
+    {
+        status:1,
+        info:"登录成功"
+    }
+跳转首页
+失败：
+    {
+        status：0,
+        info:"用户名不存在"
+    }
+    {
+        status:2,
+        info:"密码错误" 
+    }
+
+//----------------------判断用户是否登录
+接口：/api/users/islogin
+请求方式：get
+成功：
+    {
+        status:1,
+        info:"ok",
+        name:req.session.uname,
+        userstatus:req.session.status
+    }
+失败：
+    {
+        status:0,
+        info:"未登录"
+    }
+
+//------------------------判断用户是否退出
+接口：/api/users/loginout
+请求方式：get
+成功：
+    {
+        status:1,
+        info:"退出登录"
+    }
+
+//-------------------------查询商品
+接口：
+    查询条件商品：/api/goods/getgoods
+    模糊查询：/api/goods/getlikegoods
+    查询全部：/api/goods/getAllgoods
+请求方式：get
+成功：{
+        status:1,
+        data:data
+    }
+失败：
+{
+    status:0,
+    info:"获取数据失败！"
+}
+
+//-------------------------商品排序
+接口：/api/goods/goodsSort
+请求方式：get
+成功：
+{
+    status:1,
+    data:data
+}
+失败：
+{
+    status:0,
+    info:"获取数据失败！"
+}

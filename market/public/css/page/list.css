@@ -1,0 +1,82 @@
+#list li{
+    width: 285px;
+    height: 390px;
+    list-style: none;
+    float: left;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 6px;
+    transition: .3s all;
+    position: relative;
+    overflow: hidden;
+}
+#list li:hover{
+    border: 1px solid #ddd;
+}
+#list li:hover .look{
+    animation: movehover .6s linear .4s forwards;
+}
+#list li img{
+    width: 285px;
+    padding: 10px;
+    height: 285px; 
+}
+#list p{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.list h6{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{
+    font-size: 18px;
+    color: #ff464e;
+    margin-right: 20px;
+    font-weight: 900;
+}
+.market{
+    text-decoration: line-through;
+    font-size: 12px;
+    color:#ccc;
+}
+.img_text{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.wrap h3{
+    height: 50px;
+    color: #eeefff;
+    margin-bottom: 10px;
+    line-height: 50px;
+    text-indent: 25px;
+}
+.btn-group{
+    padding-left: 25px;
+}
+.look{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    background: #eee;
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+    right: -60px;
+    bottom: 5px;
+}
+.look:hover{
+    background: #ff464e;
+    color: #fff;
+}
+
+@keyframes movehover{
+    100%{
+        right:0;
+    }
+}

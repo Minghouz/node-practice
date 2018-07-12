@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/base/bootstrap.css">
+    <link rel="stylesheet" href="/css/base/swiper.css">
+    <link rel="stylesheet" href="/css/base/reset.css">
+    <link rel="stylesheet" href="/css/common/header.css">
+    <link rel="stylesheet" href="/css/common/footer.css">
+    <link rel="stylesheet" href="/css/page/index.css">
+  </head>
+  <body>
+    <div id="header">
+      <%# include("header.ejs") %>
+    </div>
+    <h3 class="container"><%= title %></h3>
+    <div id="form" class="container">
+        <div class="form-group">
+            <label for="title">商品标题</label>
+            <input type="text" class="form-control" id="title" placeholder="请输入商品标题">
+        </div>
+        <div class="form-group">
+            <label for="market">商品市场价</label>
+            <input type="text" class="form-control" id="market" placeholder="请输入商品市场价">
+        </div>
+        <div class="form-group">
+            <label for="price">商品现价</label>
+            <input type="text" class="form-control" id="price" placeholder="请输入商品现价">
+        </div>
+        <div class="form-group" id="types">
+            <label for="type">请选择商品类型</label><br/>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 手机
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 服装
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> 零食
+              </label>
+        </div>
+        <div class="form-group">
+            <label for="img">请上传商品详情展示</label>
+            <input type="file" id="img">
+        </div>
+        <div class="form-group">
+            <label for="sImg">请上传商品缩略图展示</label>
+            <input type="file" id="sImg" multiple>
+        </div>
+        <div class="form-group">
+          <label for="maxImg">请上传商品放大图展示</label>
+          <input type="file" id="maxImg" multiple>
+        </div>
+        <button type="submit" class="btn btn-default" id="submitBtn">添加</button>
+    </div>
+    <div id="foot">
+      <%# include("footer.ejs") %>
+    </div>
+    <script src="/js/base/jquery-1.11.3.js"></script>
+    <script src="/js/base/bootstrap.js"></script>
+    <script src="js/common/register.js"></script>
+    <script src="js/common/login.js"></script>
+    <script src="js/common/header.js"></script>
+    <script src="js/common/footer.js"></script>
+    <script src="js/common/basepage.js"></script>
+    <script src="/js/page/index/index.js"></script>
+  </body>
+</html>
